@@ -1,0 +1,1337 @@
+/* ==============================================
+NEXUS DIGITAL
+HOJA DE ESTILOS PRINCIPAL
+=================================================*/
+
+/* Eliminamos márgenes y espacios predeterminados */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* Configuración general de la página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F4F7FA;
+    color: #101827;
+
+}
+
+/* ==================================================
+CABECERA Y MENÚ DE NAVEGACIÓN
+===================================================== */
+
+header {
+    width: 100%;
+    min-height: 85px;
+    background-color: #101827;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+
+}
+
+/* Logotipo y nombre de empresa */
+.logo a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+}
+
+/* Color especial para DIGITAL */
+.logo span {
+    color: #20C5B5;
+
+}
+
+/* Lista del menú */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+}
+
+
+/* Enlaces del menú */
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 14px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+/* Efecto al pasar el ratón */
+nav ul li a:hover {
+    color: #20C5B5;
+    background-color: rgba(32, 197, 181, 0.10);
+}
+
+
+
+
+/* Página actualmente seleccionada */
+
+nav ul li a.activo {
+    color: #20C5B5;
+    border-bottom: 2px solid #20C5B5;
+    padding-bottom: 8px;
+
+}
+
+/* ===================================================
+        SECCIÓN 1: HERO - PRESENTACIÓN PRINCIPAL
+=================================================== */
+
+
+
+.hero {
+    width: 100%;
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 8%;
+
+    background-image: linear-gradient(
+        rgba(16, 24, 39, 0.30),
+        rgba(16, 24, 39, 0.45)
+    ), url("../img/fondo-inicio.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+
+.hero-contenido {
+    max-width: 850px;
+    margin: 0 auto;
+
+}
+
+
+.hero h1 {
+    color: #FFFFFF;
+    font-size: 46px;
+    margin-bottom: 25px;
+    font-weight: 800;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+
+.hero p {
+    color: #FFFFFF;
+    font-size: 19px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero .boton {
+    display: inline-block;
+    background-color: #20C5B5; 
+    color: #101827;
+    text-decoration: none;
+    padding: 14px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+
+}
+
+.hero .boton:hover {
+    background-color: #FFFFFF;
+
+}
+
+/* ====================================================
+    SECCIÓN 2: NUESTROS SERVICIOS
+===================================================== */
+
+
+.servicios {
+    width: 100%;
+    padding: 80px 8%;
+    background-color: #101827;
+    text-align: center;
+}
+
+
+.servicios-contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+
+.servicios h2 {
+    font-size: 36px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+
+
+.servicios-contenido > p {
+    font-size: 17px;
+    color: #D1D5DB;
+    margin-bottom: 45px;
+}
+
+
+/* Tarjetas indivíduales de servicios */
+
+.servicio {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    min-height: 210px;
+    background-color: #FFFFFF;
+    padding: 35px 25px;
+    margin: 1%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+
+}
+
+/* Efecto al pasar el ratón */
+
+.servicio:hover {
+    transform: translateY(-8px);
+
+}
+
+.servicio h3 {
+    color: #20C5B5;
+    font-size: 22px;
+    margin-bottom: 15px;
+
+}
+
+.servicio p {
+    color: #555555;
+    font-size: 15px;
+
+}
+
+/* ===============================================
+    SECCIÓN 3: SOBRE NOSOTROS
+================================================ */
+
+
+.sobre-nosotros {
+    width: 100%;
+    padding: 100px 8%;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+
+.sobre-contenido {
+    max-width: 850px;
+    margin: 0 auto;
+    
+}
+
+.sobre-nosotros h2 {
+    color: #101827;
+    font-size: 36px;
+    margin-bottom: 25px;
+
+}
+
+.sobre-nosotros p {
+    color: #555555;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+
+}
+
+.sobre-nosotros .boton {
+    display: inline-block;
+    background-color: #20C5B5;
+    color: #101827;
+    text-decoration: none;
+    padding: 14px 30px;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+
+}
+
+.sobre-nosotros .boton:hover {
+    background-color: #101827;
+    color: #FFFFFF;
+
+}
+
+/* =================================================
+        SECCIÓN 4: LLAMADA A LA ACCIÓN
+================================================= */
+
+
+.llamada-accion {
+    width: 100%;
+    padding: 100px 8%;
+    background-color: #101827;
+    text-align: center;
+}
+
+
+.llamada-contenido {
+    max-width: 850px;
+    margin: 0 auto;
+
+}
+
+
+.llamada-accion h2 {
+    color: #20C5B5;
+    font-size: 38px;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+
+
+.llamada-accion p {
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+
+.llamada-accion .boton {
+    display: inline-block;
+    background-color: #20C5B5;
+    color: #101827;
+    text-decoration: none;
+    padding: 14px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+
+}
+
+.llamada-accion .boton:hover {
+    background-color: #FFFFFF;
+
+}
+
+
+/* ====================================================
+        PIE DE PÁGINA (FOOTER)
+===================================================== */
+
+footer {
+    width: 100%;
+    background-color: #0b1220;
+    color: #FFFFFF;
+    padding: 65px 8% 25px;
+}
+
+/* Contenedor principal del footer */
+
+.footer-contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    padding-bottom: 40px;
+}
+
+/* Logotipo del footer */
+
+.footer-logo a {
+    color: #FFFFFF;
+    font-size: 28px;
+    font-weight: 800;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.footer-logo a span {
+    color: #20C5B5;
+}
+
+.footer-logo p {
+    color: #D1D5DB;
+    margin-top: 18px;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* Enlaces del footer */
+
+.footer-enlaces h3 {
+    color: #20C5B5;
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+.footer-enlaces ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-enlaces ul li {
+    margin-bottom: 12px;
+}
+
+.footer-enlaces ul li a {
+    color: #D1D5DB;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-enlaces ul li a:hover {
+    color: #20C5B5;
+}
+
+/* Derechos de autor */
+
+.footer-derechos {
+    max-width: 1200px;
+    margin: 0 auto;
+    border-top: 1px solid #303B4D;
+    padding-top: 25px;
+    text-align: center;
+    color: #9CA3AF;
+    font-size: 14px;
+}
+
+
+/* ===================================================
+    DISEÑO RESPONSIVE - TABLETAS Y MÓVILES
+==================================================== */
+
+/* TABLETAS */
+
+@media screen and (max-width: 768px) {
+
+    /* Cabecera */
+
+    header {
+        flex-direction: column;
+        padding: 20px 5%;
+        gap: 20px;
+
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+
+    }
+
+    /* HERO */
+
+    .hero {
+        padding: 60px 5%;
+        min-height: auto;
+
+    }
+
+    .hero h1 {
+        font-size: 34px;
+
+    }
+
+    /* SERVICIOS */
+
+    .servicios-contenido {
+        flex-direction: column;
+
+    }
+
+    .servicio {
+        width: 100%;
+
+    }
+
+    /* SOBRE NOSOTROS */
+
+    .sobre-nosotros {
+        padding: 60px 5%;
+
+    }
+
+    /* LLAMADA A LA ACCIÓN */
+
+    .llamada-accion {
+        padding: 60px 5%;
+
+    }
+
+    /* FOOTER */
+
+    .footer-contenido {
+        flex-direction: column;
+        gap: 30px;
+
+    }
+
+}
+
+/* TELÉFONOS MÓVILES */
+
+@media screen and (max-width: 480px) {
+
+    /* Cabecera */
+
+    header {
+        padding: 20px 4%;
+
+    }
+
+    nav ul {
+        gap: 12px;
+
+    }
+
+    nav ul li a {
+        font-size: 14px;
+
+    }
+
+    /* HERO */
+
+    .hero h1 {
+        font-size: 28px;
+
+    }
+
+    .hero p {
+        font-size: 16px;
+
+    }
+
+    /* TÍTULOS */
+
+    .servicios h2,
+    .sobre-nosotros h2,
+    .llamada-accion h2 {
+        font-size: 26px;
+
+    }
+
+    /* SERVICIOS */
+
+    .servicios {
+        padding: 50px 5%;
+
+    }
+
+    .servicio {
+        padding: 25px 20px;
+
+    }
+
+    /* BOTONES */
+
+    .hero .boton,
+    .sobre-nosotros .boton,
+    .llamada-accion .boton {
+        padding: 12px 20px;
+        font-size: 14px;
+
+    }
+
+    /* FOOTER */
+
+    footer {
+        padding: 40px 5% 20px;
+
+    }
+
+}
+
+/* ============================================
+    GALERÍA DE PROYECTOS
+============================================= */
+
+.proyectos {
+    padding: 80px 8%;
+    background-color: #F4F7FA;
+
+}
+
+.proyectos-contenido {
+    max-width: 1450px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 35px;
+    margin-top: 50px;
+    width: 100%;
+
+}
+
+.proyecto-card {
+    background-color: #FFFFFF;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e8edf2;
+
+}
+
+.proyecto-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(16, 24, 39, 0.15);
+
+}
+
+.proyecto-imagen {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.proyecto-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.proyecto-info {
+    padding: 25px;
+
+}
+
+.proyecto-info h3 {
+    color: #101827;
+    font-size: 21px;
+    margin-bottom: 12px;
+
+}
+
+.proyecto-info p {
+    color: #555555;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+
+}
+
+.proyecto-info span {
+    display: inline-block;
+    background-color: #E0F7F4;
+    color: #078f83;
+    padding: 7px 13px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+
+}
+
+/* ===========================================
+    RESPONSIVE - GALERÍA DE PROYECTOS
+============================================ */
+
+/* TABLETAS */
+
+@media screen and (max-width: 768px) {
+
+    .proyectos {
+        padding: 60px 5%;
+
+    }
+
+    .proyectos-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+
+    }
+
+    .proyecto-imagen {
+        height: 200px;
+
+    }
+
+}
+
+/* TELÉFONOS MÓVILES */
+
+@media  screen and (max-width: 480px) {
+
+    .proyectos-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+
+    }
+
+    .proyecto-imagen {
+        height: 220px;
+
+    }
+
+    .proyecto-info {
+        padding: 20px;
+
+    }
+    
+}
+
+/* =================================================
+    PRESENTACIÓN DEL PORTFOLIO
+================================================= */
+
+.portfolio-hero {
+    width: 100%;
+    padding: 100px 8%;
+    background: linear-gradient(135deg, #FFFFFF, #EAF3F6);
+    text-align: center;
+
+}
+
+.portfolio-contenido {
+    max-width: 850px;
+    margin: 0 auto;
+
+}
+
+.portfolio-hero h1 {
+    color: #101827;
+    font-size: 42px;
+    margin-bottom: 25px;
+    font-weight: bold;
+
+}
+
+.portfolio-hero p {
+    color: #555555;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+
+}
+
+/* ==================================================
+    TEXTOS Y TÍTULOS DEL PORTFOLIO
+================================================== */
+
+.proyectos {
+    text-align: center;
+
+}
+
+.proyectos h2 {
+    color: #101827;
+    font-size: 36px;
+    margin-bottom: 20px;
+
+}
+
+.proyectos-contenido > p {
+    max-width: 750px;
+    margin: 0 auto 45px;
+    color: #555555;
+    font-size: 17px;
+    line-height: 1.8;
+
+}
+
+/* TEXTOS DE LAS TARJETAS */
+
+.proyecto-info {
+    padding: 25px;
+    text-align: left;
+}
+
+
+
+.proyecto-info h3 {
+    color: #101827;
+    font-size: 22px;
+    margin-bottom: 15px;
+
+}
+
+.proyecto-info p {
+    color: #555555;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+
+}
+
+.proyectos-info span {
+    display: inline-block;
+    background-color: #E0F7F4;
+    color: #078f83;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+
+}
+
+
+/* ======================================================
+   PÁGINA DE PRESUPUESTO
+======================================================= */
+
+/* PRESENTACIÓN */
+
+.presupuesto-hero {
+    width: 100%;
+    padding: 90px 8%;
+    background: linear-gradient(135deg, #FFFFFF, #EAF3F6);
+    text-align: center;
+}
+
+.presupuesto-hero .formulario-contenido {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.presupuesto-hero h1 {
+    color: #101827;
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+
+.presupuesto-hero p {
+    color: #555555;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* SECCIÓN DEL FORMULARIO */
+
+.presupuesto-formulario {
+    width: 100%;
+    padding: 80px 8%;
+    background-color: #F4F7FA;
+}
+
+.presupuesto-contenido {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.presupuesto-contenido h2 {
+    color: #101827;
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.presupuesto-contenido > p {
+    color: #555555;
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+/* TARJETA DEL FORMULARIO */
+
+.presupuesto-contenido form {
+    background-color: #FFFFFF;
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 8px 30px rgba(16, 24, 39, 0.07);
+}
+
+
+/* AGRUPACIÓN DE CAMPOS */
+
+.presupuesto-contenido fieldset {
+    border: 1px solid #E1E7ED;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    background-color: #FFFFFF;
+}
+
+.presupuesto-contenido legend {
+    color: #078F83;
+    font-size: 19px;
+    font-weight: bold;
+    padding: 0 12px;
+}
+
+
+/* CAMPOS */
+
+.campo-formulario {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+}
+
+.campo-formulario:last-child {
+    margin-bottom: 0;
+}
+
+.campo-formulario label {
+    color: #101827;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.campo-formulario input,
+.campo-formulario select,
+.campo-formulario textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #CDD5DF;
+    border-radius: 7px;
+    background-color: #FFFFFF;
+    color: #101827;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.campo-formulario input:focus,
+.campo-formulario select:focus,
+.campo-formulario textarea:focus {
+    outline: none;
+    border-color: #20C5B5;
+    box-shadow: 0 0 0 3px rgba(32, 197, 181, 0.12);
+}
+
+.campo-formulario textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+
+/* PRIVACIDAD */
+
+.campo-privacidad {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.campo-privacidad input {
+    margin-top: 4px;
+    accent-color: #20C5B5;
+}
+
+.campo-privacidad label {
+    color: #555555;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* BOTÓN */
+
+.boton-presupuesto {
+    display: block;
+    width: 100%;
+    padding: 17px;
+    background-color: #20C5B5;
+    color: #101827;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.boton-presupuesto:hover {
+    background-color: #101827;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+}
+
+
+/* ADAPTACIÓN A MÓVILES */
+
+@media (max-width: 768px) {
+
+    .presupuesto-hero {
+        padding: 65px 6%;
+    }
+
+    .presupuesto-hero h1 {
+        font-size: 34px;
+    }
+
+    .presupuesto-hero p {
+        font-size: 16px;
+    }
+
+    .presupuesto-formulario {
+        padding: 55px 5%;
+    }
+
+    .presupuesto-contenido h2 {
+        font-size: 27px;
+    }
+
+    .presupuesto-contenido form {
+        padding: 22px 16px;
+    }
+
+    .presupuesto-contenido fieldset {
+        padding: 22px 15px;
+    }
+
+}
+
+
+
+/* =========================================
+   CONTACTO - DISEÑO PROFESIONAL
+========================================= */
+
+/* PRESENTACIÓN */
+
+.contacto-hero {
+    background: linear-gradient(120deg, #101827, #1D3448);
+    padding: 110px 0;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.contacto-etiqueta {
+    display: inline-block;
+    color: #20C5B5;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+.contacto-hero h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.contacto-hero p {
+    max-width: 680px;
+    margin: 0 auto 35px;
+    color: #D1D5DB;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.contacto-hero .boton {
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+/* SERVICIOS DE CONTACTO */
+
+.contacto-servicios {
+    padding: 90px 0;
+    background-color: #F4F7FA;
+}
+
+.contacto-titulo {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 55px;
+}
+
+.contacto-titulo span {
+    color: #20C5B5;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.contacto-titulo h2 {
+    color: #101827;
+    font-size: 34px;
+    margin: 15px 0;
+}
+
+.contacto-titulo p {
+    color: #555555;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.contacto-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.contacto-card {
+    background-color: #FFFFFF;
+    padding: 35px;
+    border-radius: 12px;
+    border: 1px solid #E5EAF0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contacto-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(16, 24, 39, 0.10);
+}
+
+.contacto-icono {
+    width: 55px;
+    height: 55px;
+    background-color: #E2F8F5;
+    color: #159E91;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.contacto-card h3 {
+    color: #101827;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.contacto-card p {
+    color: #555555;
+    line-height: 1.8;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.contacto-card a {
+    color: #159E91;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contacto-card a:hover {
+    color: #101827;
+}
+
+
+/* LLAMADA A LA ACCIÓN */
+
+.contacto-cta {
+    background: linear-gradient(120deg, #101827, #1D3448);
+    padding: 90px 0;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.contacto-cta span {
+    color: #20C5B5;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.contacto-cta h2 {
+    font-size: 40px;
+    line-height: 1.3;
+    margin: 20px 0;
+}
+
+.contacto-cta p {
+    color: #D1D5DB;
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: 0 auto 30px;
+}
+
+.contacto-cta .boton {
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .contacto-hero {
+        padding: 75px 20px;
+    }
+
+    .contacto-hero h1 {
+        font-size: 36px;
+    }
+
+    .contacto-hero p {
+        font-size: 16px;
+    }
+
+    .contacto-servicios {
+        padding: 65px 20px;
+    }
+
+    .contacto-titulo h2 {
+        font-size: 28px;
+    }
+
+    .contacto-tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+    .contacto-cta {
+        padding: 70px 20px;
+    }
+
+    .contacto-cta h2 {
+        font-size: 32px;
+    }
+
+}
+
+/* =================================
+   LOGOTIPO NEXUS DIGITAL
+================================= */
+
+header .logo,
+header .logo:visited,
+header .logo:hover,
+header .logo:active {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .logo span {
+    color: #20C5B5;
+}
+
+
+/* CORREGIR COLOR DEL BOTÓN DE CONTACTO */
+
+.contacto-hero .boton,
+.contacto-hero .boton:visited,
+.contacto-hero .boton:hover,
+.contacto-hero .boton:active {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.contacto-cta .boton,
+.contacto-cta .boton:visited,
+.contacto-cta .boton:hover,
+.contacto-cta .boton:active {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+/* TARJETAS DE PROYECTOS */
+
+.proyectos-contenido {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 60px 8%;
+}
+
+.proyecto {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proyecto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.proyecto img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+
+.proyecto h3 {
+    color: #101827;
+    font-size: 22px;
+    margin: 20px 20px 10px;
+}
+
+.proyecto p {
+    color: #555555;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0 20px 25px;
+}
+
+
+/* RESPONSIVE PORTFOLIO */
+
+@media (max-width: 900px) {
+    .proyectos-contenido {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 40px 5%;
+    }
+}
+
+@media (max-width: 600px) {
+    .portfolio-hero {
+        padding: 70px 5%;
+    }
+
+    .portfolio-hero h1 {
+        font-size: 32px;
+    }
+
+    .portfolio-hero p {
+        font-size: 16px;
+    }
+
+    .proyectos-contenido {
+        grid-template-columns: 1fr;
+        padding: 30px 5%;
+        gap: 25px;
+    }
+
+    .proyecto img {
+        height: 220px;
+    }
+}
+
